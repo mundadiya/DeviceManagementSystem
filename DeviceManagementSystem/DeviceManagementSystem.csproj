@@ -204,6 +204,12 @@
     <Content Include="manager\printcss\font-awesome.css" />
     <Content Include="manager\printcss\print_css.css" />
     <Content Include="manager\employeemst.aspx" />
+    <Content Include="manager\slider\css\style.css" />
+    <Content Include="manager\slider\css\style.mod.css" />
+    <Content Include="manager\slider\js\jquery.js" />
+    <Content Include="manager\slider\js\script.js" />
+    <Content Include="manager\slider\js\wowslider.js" />
+    <Content Include="manager\slider\js\wowslider.mod.js" />
     <Content Include="slider\css\style.css" />
     <Content Include="slider\css\style.mod.css" />
     <Content Include="slider\js\jquery.js" />
