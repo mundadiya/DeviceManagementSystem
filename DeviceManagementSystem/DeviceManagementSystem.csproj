@@ -92,6 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\font-awesome.css" />
     <Content Include="css\log.css" />
     <Content Include="css\new-style.css" />
@@ -203,6 +204,13 @@
     <Content Include="manager\printcss\font-awesome.css" />
     <Content Include="manager\printcss\print_css.css" />
     <Content Include="manager\employeemst.aspx" />
+    <Content Include="slider\css\style.css" />
+    <Content Include="slider\css\style.mod.css" />
+    <Content Include="slider\js\jquery.js" />
+    <Content Include="slider\js\script.js" />
+    <Content Include="slider\js\wowslider.js" />
+    <Content Include="slider\js\wowslider.mod.js" />
+    <Content Include="style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
