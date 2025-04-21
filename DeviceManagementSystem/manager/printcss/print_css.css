@@ -1,0 +1,69 @@
+﻿    
+          /*@font-face {
+              font-family: "Coronet";
+              src: url("/fonts/911Fonts.com_CoronetRegular__-_911fonts.com_fonts_bYQj.ttf");
+          }*/
+
+
+/*@font-face {
+    font-family: 'Teko-Regular';
+    src: url('../fonts/Teko-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Teko-Bold';
+    src: url('../fonts/Teko-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Teko-Light';
+    src: url('../fonts/Teko-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Teko-Medium';
+    src: url('../fonts/Teko-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Teko-SemiBold';
+    src: url('../fonts/Teko-SemiBold.ttf') format('truetype');
+}*/
+@font-face {
+    font-family: 'AGENCYB';
+    src: url('../fonts/AGENCYB.TTF') format('truetype');
+}
+.crt_static
+          {
+               font-family:AGENCYB;
+                font-size:16pt;
+                text-align: justify;
+          }
+          .crt_dynamic
+          {
+              color:black;
+              font-family:Arial;
+              font-size:12pt;
+              text-transform: uppercase;
+          }
+
+           .crt_stddetails
+          {
+              color:#530000;
+              font-family:AGENCYB;
+              font-size:15pt;
+              font-weight:bold;
+              
+          }
+            .crt_cource
+          {
+              color:#530000;
+              font-family:AGENCYB;
+              font-size:23pt;
+              font-weight:bold;
+          }
+
+            @page { size: auto;  margin: 0mm; }
+
+            @media print
+{
+    * {-webkit-print-color-adjust:exact;}
+}
+
+            

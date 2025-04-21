@@ -1,0 +1,468 @@
+﻿@import "log.css";
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+html
+{
+	position:relative;
+	min-height:100%;
+}
+body {
+    margin:0; 
+    padding:0 0 95px 0;
+	color: #4b4a4a;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	background: url(../images/bg.png);
+}
+.top_header {
+    background: #a90003;
+    height: 4px;
+}
+.header{
+	background: #fff;
+    padding: 5px 0;
+    color: #fff;
+}
+ .wrapper {
+    width: 95%;
+    margin:0 auto;
+}
+.menu_m {
+	background: #14567b;
+    background: -moz-linear-gradient(top,  rgba(20,86,123,1) 0%, rgba(3,53,82,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(20,86,123,1)), color-stop(100%,rgba(3,53,82,1)));
+    background: -webkit-linear-gradient(top,  rgba(20,86,123,1) 0%,rgba(3,53,82,1) 100%);
+    background: -o-linear-gradient(top,  rgba(20,86,123,1) 0%,rgba(3,53,82,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(20,86,123,1) 0%,rgba(3,53,82,1) 100%);
+    background: linear-gradient(to bottom,  rgba(41,10,89,1) 0%,rgba(255,84,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14567b', endColorstr='#033552',GradientType=0 );
+}
+#clock {
+    color: #fff;
+}
+.footer{
+    background: #2d2d2d url(../images/footer_bg.jpg) repeat-x top center;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    padding:5px 0;
+    box-shadow: 0 0 10px #333;
+}
+.footer hr{
+    border-top: solid 1px #494949;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.lum {
+    color: #ffd200;
+    text-decoration: none;
+}
+.lum:hover {
+    color: #cccccc;
+}
+.txt_bx{
+	background: #fff;
+    border: solid 1px #ddd;
+    padding: 10px;
+    width: 94%;
+    transition:border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.txt_bx:focus{
+    border: solid 1px #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6)
+}
+.login_btn {
+	border: medium none;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	height: 30px;
+	width: 81px;
+	background:#000 url(../images/login_btn.jpg) no-repeat;
+}
+.login_btn:hover {
+	height: 30px;
+	width: 81px;
+	background:#000 url(../images/login_btn_h.jpg) no-repeat;
+}
+.reset_btn {
+	border: medium none;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	height: 30px;
+	width: 81px;
+	background:#000 url(../images/reset_btn.jpg) no-repeat;
+}
+.reset_btn:hover {
+	height: 30px;
+	width: 81px;
+	background:#000 url(../images/reset_btn_h.jpg) no-repeat;
+}
+.apply_online {
+    color: #242424;
+    font-size: 14px;
+}
+.wh_c {
+    color: #fff;
+}
+#navbar {
+    height: 1em;
+    margin: 0;
+    padding: 0;
+}
+#navbar li {
+    float: left;
+    list-style: none outside none;
+}
+#navbar li a {
+    color: #fff;
+    display: block;
+    padding: 8px 18px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-right: solid 1px #1a638d;
+}
+#navbar li a:hover {
+    background: rgb(255,48,25);
+    background: -moz-linear-gradient(top,  rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,48,25,1)), color-stop(100%,rgba(207,4,4,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 );
+}
+#navbar li ul {
+    display: none;
+    width: auto;
+}
+#navbar li:hover ul, #navbar li.hover ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+#navbar li:hover li, #navbar li.hover li {
+    float: none;
+}
+#navbar li:hover li a, #navbar li.hover li a {
+    background-color: #b31422;
+    background-image: none;
+    border-bottom: 1px solid #d92d39;
+    color: #fff;
+}
+#navbar li li a:hover {
+    background-color: #750911;
+    background-image: none;
+    border-bottom: 1px solid #f4939a;
+}
+.red_c {
+    color: #a81120;
+}
+.inner_FileUpload {
+    border: 1px solid #cecece;
+    box-shadow: 1px 1px 2px #cecece;
+    height: 20px;
+    width: 120px;
+}
+.inner_txt_bx {
+    background: none repeat scroll 0 0 #fbfbfb;
+    border: 1px solid #cecece;
+    font-size: 11px;
+    font-weight: normal;
+    height: 17px;
+    width: 160px;
+}
+.inner_drop_bx {
+    background: none repeat scroll 0 0 #fbfbfb;
+    border: 1px solid #cecece;
+    font-size: 11px;
+    font-weight: normal;
+    height: 25px;
+    width: 162px;
+}
+.inner_btn {
+    background: none repeat scroll 0 0 #333;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px 5px;
+}
+.inner_btn:hover {
+    background: none repeat scroll 0 0 #910b0b;
+}
+.loginMainPanel{
+    width: 100%;
+    background: #f5f5f5;
+    border: solid 1px #ddd;
+    padding: 10px;
+    padding-left: 20px;
+}
+.loginMainPanel h2{
+    background: url(../images/loginDot.jpg) repeat-x bottom;
+    color: #fff;
+}
+.loginMainPanel h2 span{
+    padding: 5px 10px;
+    background: #f25223;
+    display: inline-block;
+}
+.loginMainPanel label{
+    display: block;
+    margin-bottom: 5px;
+}
+.forgotLink{
+    color: #d92525;
+}
+.forgotLink:hover{
+    color: #333;
+}
+.help_div{
+    width: 20%;
+}
+.information_div {
+    background: none repeat scroll 0 0 #f4f4f4;
+    width: 45%;
+    margin-left: 1%;
+}
+.new_appli_w {
+    width: 22%;
+}
+.inner_drop_bx {
+    background: none repeat scroll 0 0 #fbfbfb;
+    border: 1px solid #cecece;
+    height: 20px;
+    width: 162px;
+}
+.accordion {
+    background: none repeat scroll 0 0 #fafafa;
+    border: 1px solid #d5d5d5;
+}
+.accordion h3 {
+    background: url("../images/accodian_ar.jpg") no-repeat scroll 5px 15px #f3f3f3;
+    border-top: 1px solid #d5d5d5;
+    font-size: 13px;
+}
+.accordion h3 a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.accordion h3 a:hover{
+    color: #bd4d5d;
+}
+.accordion h3 div {
+    padding: 10px 18px;
+}
+.accordion .panel li a div {
+    background: url("../images/gray_ar.jpg") no-repeat scroll 5px 10px rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #e8e8e8;
+    padding: 4px 18px;
+}
+.accordion .panel li a {
+    color: #131314;
+    text-decoration: none;
+}
+.accordion .panel li a:hover {
+    color: #980f19;
+}
+.inner_dottxt_bx {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0);
+    border-color: -moz-use-text-color -moz-use-text-color #ccc;
+    border-image: none;
+    border-style: none none dashed;
+    border-width: medium medium 1px;
+    width: 150px;
+}
+.last_date_m {
+    font-size: 15px;
+    margin-top: 130px;
+}
+.lblWaterMark {
+    background: #fbfbfb;
+    border: 1px solid #cecece;
+    color: #000000;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: lighter;
+    height: 17px;
+    text-align: left;
+    width: 158px;
+}
+.browse {
+    color: #006699;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    width: 120px;
+}
+.lbl {
+    color: #000000;
+    font-family: Verdana;
+    font-size: 11px;
+}
+.chkbox {
+    color: #006699;
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 11px;
+}
+.inner_txt_Area {
+    background: #fbfbfb;
+    border: 1px solid #cecece;
+    font-size: 11px;
+    font-weight: normal;
+    height: 30px;
+    width: 160px;
+}
+.basic_d legend {
+    background: #063b5a;
+    box-shadow: 2px 2px 2px #aaa;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 15px;
+    padding: 4px 0;
+    text-align: center;
+    width: 200px;
+}
+.basic_d {
+    background: #fff;
+    border: 1px solid #063b5a;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    overflow:hidden;
+}
+.modalBackground {
+    background-color: Gray;
+    opacity: 0.8;
+    z-index: 10000;
+}
+.log_fields {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    margin: 21px 0 0;
+}
+.log_fields legend {
+    background: #290a59;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px 6px;
+}
+.for_pas {
+    color: #333;
+}
+.for_pas:hover {
+    color: #940c1a;
+}
+.capt_txtbx {
+    border: 1px solid #ddd;
+    width: 100px;
+}
+.pnlCSS {
+    background: #ffffff;
+    border: 1px solid #c0c0c0;
+    cursor: pointer;
+    font-weight: bold;
+    width: 99%;
+}
+.gv_inner_txt_bx
+{
+	width:112px;
+	height:17px;
+	border:solid 1px #CECECE;
+	font-size:11px;
+	font-weight:normal;
+	background:#fbfbfb;
+}
+/*Calendar Control CSS*/
+ .cal_Theme1 .ajax__calendar_container
+ {
+     background-color: #DEF1F4;
+     border: solid 1px #77D5F7;
+     width: 180px;
+     z-index:2000;
+     position:absolute;
+ }
+ 
+ .cal_Theme1 .ajax__calendar_header
+ {
+     background-color: #ffffff;
+     margin-bottom: 4px;
+ }
+ 
+ .cal_Theme1 .ajax__calendar_title, .cal_Theme1 .ajax__calendar_next, .cal_Theme1 .ajax__calendar_prev
+ {
+     color: #004080;
+     padding-top: 3px;
+ }
+ 
+ .cal_Theme1 .ajax__calendar_body
+ {
+     background-color: #ffffff;
+     border: solid 1px #77D5F7;
+ }
+ 
+ .cal_Theme1 .ajax__calendar_dayname
+ {
+     text-align: center;
+     font-weight: bold;
+     margin-bottom: 4px;
+     margin-top: 2px;
+     color: #004080;
+ }
+ 
+ .cal_Theme1 .ajax__calendar_day
+ {
+     color: #004080;
+     text-align: center;
+ }
+ 
+ .cal_Theme1 .ajax__calendar_hover .ajax__calendar_day, .cal_Theme1 .ajax__calendar_hover .ajax__calendar_month, .cal_Theme1 .ajax__calendar_hover .ajax__calendar_year, .cal_Theme1 .ajax__calendar_active
+ {
+     color: #004080;
+     font-weight: bold;
+     background-color: #DEF1F4;
+ }
+ 
+ .cal_Theme1 .ajax__calendar_today
+ {
+     font-weight: bold;
+ }
+ 
+ .cal_Theme1 .ajax__calendar_other, .cal_Theme1 .ajax__calendar_hover .ajax__calendar_today, .cal_Theme1 .ajax__calendar_hover .ajax__calendar_title
+ {
+     color: #bbbbbb;
+ }
+.welcomeUser{
+    color: #fff;
+}
+.welcomeUser span{
+    color: #fccf19;
+}
+.whiteBox
+{
+	background:#fff;
+	padding:10px;
+}
+.personalMargin
+{
+	margin-top:15px;
+}
+label
+{
+	font-size:12px;
+}
+.personalMargin .col-sm-6,.personalMargin .col-sm-4,.personalMargin .col-sm-3
+{
+	margin-bottom:6px;
+}

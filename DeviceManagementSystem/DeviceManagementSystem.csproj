@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC07D302-351B-41FB-B455-61B70AF23256}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeviceManagementSystem</RootNamespace>
+    <AssemblyName>DeviceManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\etechonline.co.in\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EditableDropDownList">
+      <HintPath>..\..\..\AGM_Infrastructure_Latest\AGM_Infrastructure_Latest\bin\EditableDropDownList.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MSCaptcha, Version=2.0.1.36094, Culture=neutral, PublicKeyToken=b9ff12f28cdcf412, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSCaptcha.1.0.0\lib\MSCaptcha.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\log.css" />
+    <Content Include="css\new-style.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="deviceusage.aspx" />
+    <Content Include="images\check.png" />
+    <Content Include="images\jquery-2.1.4.min.js" />
+    <Content Include="images\logosmall.png" />
+    <Content Include="images\pageicon.png" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery-1.8.2.js" />
+    <Content Include="js\jquery.accordion.2.0.js" />
+    <Content Include="manager\css\bootstrap.min.css" />
+    <Content Include="manager\css\font-awesome.css" />
+    <Content Include="manager\css\font.css" />
+    <Content Include="manager\css\jqvmap.css" />
+    <Content Include="manager\css\lightbox.css" />
+    <Content Include="manager\css\minimal.css" />
+    <Content Include="manager\css\monthly.css" />
+    <Content Include="manager\css\morris.css" />
+    <Content Include="manager\css\style-responsive.css" />
+    <Content Include="manager\css\style.css" />
+    <Content Include="manager\editable\css\img\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="manager\editable\css\img\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="manager\editable\css\img\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="manager\editable\css\img\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="manager\editable\css\img\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="manager\editable\css\img\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="manager\editable\css\img\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="manager\editable\css\img\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="manager\editable\css\img\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="manager\editable\css\img\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="manager\editable\css\img\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="manager\editable\css\img\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="manager\editable\css\img\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="manager\editable\css\img\ui-icons_222222_256x240.png" />
+    <Content Include="manager\editable\css\img\ui-icons_228ef1_256x240.png" />
+    <Content Include="manager\editable\css\img\ui-icons_454545_256x240.png" />
+    <Content Include="manager\editable\css\img\ui-icons_888888_256x240.png" />
+    <Content Include="manager\editable\css\img\ui-icons_ef8c08_256x240.png" />
+    <Content Include="manager\editable\css\img\ui-icons_ffd27a_256x240.png" />
+    <Content Include="manager\editable\css\img\ui-icons_ffffff_256x240.png" />
+    <Content Include="manager\editable\css\jquery-ui.css" />
+    <Content Include="manager\editable\jquery-1.9.1.js" />
+    <Content Include="manager\editable\jquery-ui.css" />
+    <Content Include="manager\editable\jquery-ui.js" />
+    <Content Include="manager\editable\js\jquery-1.6.4.min.js" />
+    <Content Include="manager\editable\js\jquery-1.8.2.min.js" />
+    <Content Include="manager\editable\js\jquery-ui-1.8.24.custom.min.js" />
+    <Content Include="manager\editable\js\jquery.ui.autocomplete.js" />
+    <Content Include="manager\editable\js\jquery.ui.button.js" />
+    <Content Include="manager\editable\js\jquery.ui.combobox.js" />
+    <Content Include="manager\editable\js\jquery.ui.core.js" />
+    <Content Include="manager\editable\js\jquery.ui.position.js" />
+    <Content Include="manager\editable\js\jquery.ui.widget.js" />
+    <Content Include="manager\devicemst.aspx" />
+    <Content Include="manager\fonts\fontawesome-webfont.svg" />
+    <Content Include="manager\fonts\fontello.svg" />
+    <Content Include="manager\home.aspx" />
+    <Content Include="manager\images\bg.jpg" />
+    <Content Include="manager\images\blank1.jpg" />
+    <Content Include="manager\images\clicktoadd.jpg" />
+    <Content Include="manager\images\close.png" />
+    <Content Include="manager\images\completed.png" />
+    <Content Include="manager\images\deactive.ico" />
+    <Content Include="manager\images\deactive.png" />
+    <Content Include="manager\images\delete.png" />
+    <Content Include="manager\images\downarrow.png" />
+    <Content Include="manager\images\edit.png" />
+    <Content Include="manager\images\logo-white.png" />
+    <Content Include="manager\images\logo.jpg" />
+    <Content Include="manager\images\mail.png" />
+    <Content Include="manager\images\minimal.png" />
+    <Content Include="manager\images\nav-expand.png" />
+    <Content Include="manager\images\next.png" />
+    <Content Include="manager\images\noimage.png" />
+    <Content Include="manager\images\norecordfound.png" />
+    <Content Include="manager\images\pass.png" />
+    <Content Include="manager\images\prev.png" />
+    <Content Include="manager\images\print.ico" />
+    <Content Include="manager\images\ProfilePic.png" />
+    <Content Include="manager\images\requestsent.png" />
+    <Content Include="manager\images\search-icon.png" />
+    <Content Include="manager\images\signature.png" />
+    <Content Include="manager\images\tick.png" />
+    <Content Include="manager\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="manager\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="manager\images\ui-icons_222222_256x240.png" />
+    <Content Include="manager\images\view.png" />
+    <Content Include="manager\images\wrong.png" />
+    <Content Include="manager\js\bootstrap.js" />
+    <Content Include="manager\js\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="manager\js\jquery.min.js" />
+    <Content Include="manager\js\jquery.nicescroll.js" />
+    <Content Include="manager\js\jquery.scrollTo.js" />
+    <Content Include="manager\js\jquery.slimscroll.js" />
+    <Content Include="manager\js\jquery2.0.3.min.js" />
+    <Content Include="manager\js\lightbox-plus-jquery.min.js" />
+    <Content Include="manager\js\monthly.js" />
+    <Content Include="manager\js\raphael-min.js" />
+    <Content Include="manager\js\script.js" />
+    <Content Include="manager\js\scripts.js" />
+    <Content Include="manager\js\tripentry.js" />
+    <Content Include="manager\Login.aspx" />
+    <Content Include="manager\printcss\font-awesome.css" />
+    <Content Include="manager\printcss\print_css.css" />
+    <Content Include="manager\employeemst.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="deviceusage.aspx.cs">
+      <DependentUpon>deviceusage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deviceusage.aspx.designer.cs">
+      <DependentUpon>deviceusage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manager\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manager\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="manager\devicemst.aspx.cs">
+      <DependentUpon>devicemst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manager\devicemst.aspx.designer.cs">
+      <DependentUpon>devicemst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manager\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manager\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manager\employeemst.aspx.cs">
+      <DependentUpon>employeemst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manager\employeemst.aspx.designer.cs">
+      <DependentUpon>employeemst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manager\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manager\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BusinessLogicLayer\BAL.cs" />
+    <Compile Include="Models\BusinessObjectLayer\BO.cs" />
+    <Compile Include="Models\DataAccessLayer\DAL.cs" />
+    <Compile Include="Models\Utitlity\DataLayer.cs" />
+    <Compile Include="Models\Utitlity\DBUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="manager\fonts\fontawesome-webfont.eot" />
+    <Content Include="manager\fonts\fontawesome-webfont.ttf" />
+    <Content Include="manager\fonts\fontawesome-webfont.woff" />
+    <Content Include="manager\fonts\fontawesome-webfont.woff2" />
+    <Content Include="manager\fonts\FontAwesome.otf" />
+    <Content Include="manager\fonts\fontello.eot" />
+    <Content Include="manager\fonts\fontello.ttf" />
+    <Content Include="manager\fonts\fontello.woff" />
+    <Content Include="manager\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="manager\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="manager\admin.Master" />
+    <Content Include="manager\fonts\Teko-Regular.ttf" />
+    <Content Include="manager\fonts\Teko-Bold.ttf" />
+    <Content Include="manager\fonts\Teko-Light.ttf" />
+    <Content Include="manager\fonts\Teko-Medium.ttf" />
+    <Content Include="manager\fonts\Teko-SemiBold.ttf" />
+    <Content Include="manager\fonts\AGENCYB.TTF" />
+    <None Include="Properties\PublishProfiles\Angul_Mines_Admin_Publish.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7284</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7284/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
